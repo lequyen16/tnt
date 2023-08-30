@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng ký</title>
+    <meta charset="utf-8" />
+    <link href="dangky.css" rel="stylesheet" /> 
+  
+</head>
+<body>
+    <h3>ĐĂNG KÝ THÀNH VIÊN</h3>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+        <label>Mã sinh viên: *</label>
+        <br />
+        <input name="id" type="text">
+        <br>
+        <label>Họ và tên: *</label> <br />
+        <input name="name" type="text">
+        <br />
+        <label>Email: *</label>
+        <br />
+        <input name="email" type="text"> <br>
+        <label>Giới tính: *</label><br>
+        <input name="re" type="radio">Nam
+        <input name="re" type="radio">Nữ<br><br>
+        <label>Sở thích: *</label> <br>
+        <input name="re" type="checkbox">
+        Đọc sách
+        <input name="re" type="checkbox">
+        Du lịch
+        <input name="re" type="checkbox"> 
+        Âm nhạc
+        <input name="re" type="checkbox">
+        Ẩm thực
+        <input name="re" type="checkbox">
+        Khác<br><br>
+        
+        <label>Quốc tịch *</label>
+        <br>
+        <select name="select">
+            <option>Chọn quốc tịch</option>
+            <option>Brunei</option>
+            <option>Campuchia</option>
+            <option>Đông Timor</option>
+            <option>Indonesia</option>
+            <option>Lào</option>
+            <option>Malaysia</option>
+            <option>Myanmar</option>
+            <option>Philipines</option>
+            <option>Singapore</option>
+            <option>Thái Lan</option>
+            <option>Việt Nam</option>
+        </select>
+        <br><br> 
+        <label>Ghi Chú (ít hơn 200 ký tự)</label>
+        <br>
+        <textarea rows="5" cols="20"></textarea><br><br>
+
+      
+      <button type="submit" onclick="submitForm()">Đăng ký</button>
+      
+      (<span style='color:red'>*</span>) Bắt buộc phải điền.
+    </form>
+
+    
+    <script src='dangky.js'></script>
+
+</body>
+</html>
+
